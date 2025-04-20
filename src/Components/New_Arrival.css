@@ -1,0 +1,293 @@
+.New_Arrival {
+  padding: 2rem 6rem;
+  width: 100%;
+}
+
+.New_Arrival_Title {
+  margin-left: 131px;
+  margin-bottom: 1rem;
+}
+
+.New_Arrival_Text {
+  margin-left: 131px;
+  margin-bottom: 2rem;
+}
+
+.Arrival_container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+  color: black;
+}
+
+.Arrival_left {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  flex: 2;
+  /* Allow it to take more space */
+}
+
+.container1,
+.container2,
+.container3,
+.container4 {
+  width: 100%;
+  /* Full width of grid cell */
+  height: 200px;
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
+  /* Keep relative for internal positioning */
+  padding: 1rem;
+}
+
+.container1 .Arrival1_img {
+  height: 224px;
+  width: 224px;
+  position: absolute;
+  top: -19px;
+  right: 0;
+}
+
+.container1 h3 {
+  font-size: 37px;
+  font-weight: 700;
+  width: 180px;
+}
+
+.container2 .Arrival2_img {
+
+
+  height: 230px;
+  width: 239px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  filter: invert(1) brightness(2);
+  mix-blend-mode: exclusion;
+}
+
+.container2 h3 {
+  font-size: 37px;
+  font-weight: 700;
+  width: 209px;
+  margin-top: 43px;
+}
+
+.container3 .Arrival3_img {
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.container3 h3 {
+  font-size: 37px;
+  font-weight: 700;
+  width: 287px;
+  margin-top: 12px;
+}
+
+.container3 p {
+  font-size: 16px;
+  width: 275px;
+  margin-top: -2rem;
+}
+
+.container4 .Arrival4_img {
+  height: 200px;
+  width: 175px;
+  position: absolute;
+  top: -14px;
+  left: -9px;
+}
+
+.container4 h3 {
+  font-size: 37px;
+  font-weight: 700;
+  width: 111px;
+  margin-left: 141px;
+  margin-top: 48px;
+}
+
+.Arrival_right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1;
+  /* Smaller portion of the layout */
+}
+
+.AR_con1,
+.AR_con2 {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn_plus1,
+.btn_plus2 {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  color: white;
+  border: none;
+  font-size: 30px;
+}
+
+.btn_plus1 {
+  background-color: #197278;
+}
+
+.btn_plus2 {
+  background-color: #434343;
+}
+
+.btnArrival1,
+.btnArrival2 {
+  height: 51px;
+  width: 133px;
+  border-radius: 10px;
+  color: white;
+  background-color: #434343;
+}
+
+@media (max-width: 767px) {
+  .New_Arrival {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .New_Arrival_Title,
+  .New_Arrival_Text {
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .New_Arrival_Title {
+    margin-bottom: 0.5rem;
+  }
+
+  .New_Arrival_Text {
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+    width: 545px;
+  }
+
+  .Arrival_container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .Arrival_left {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .container1 {
+    grid-column: 1 / -1;
+  }
+
+  .container3 {
+    grid-column: 1 / -1;
+  }
+
+  /* .container1,
+    .container2,
+    .container3,
+    .container4 {
+      height: auto;
+      width: 70%;
+      min-height: 200px;
+      padding: 1rem;
+    } */
+
+  .container1 {
+    height: 200px;
+    width: 89%;
+    ;
+    min-height: 200px;
+    padding: 1rem;
+  }
+
+  .container1 .Arrival1_img {
+    width: 309px;
+    max-width: 267px;
+    height: 230px;
+    position: relative;
+    top: -30px;
+    right: 0;
+    left: 89px;
+    margin-top: 1px;
+  }
+
+  .container1 h3 {
+    margin-top: -189px;
+  }
+
+  .container2 {
+    height: 200px;
+    width: 90%;
+    min-height: 200px;
+    padding: 1rem;
+  }
+
+  .container2 .Arrival2_img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .container2 h3 {
+    margin-top: 125px;
+    font-size: 23px;
+    width: 138px;
+  }
+
+  .container4 {
+    height: 200px;
+    width: 80%;
+    min-height: 200px;
+    padding: 1rem;
+  }
+
+  .container4 h3 {
+    font-size: 23px;
+    width: 138px;
+  }
+
+  .container4 .Arrival4_img {
+    height: 246px;
+    width: 200px;
+  }
+
+
+  .container3 {
+    height: 200px;
+    width: 89%;
+    min-height: 200px;
+    padding: 1rem;
+  }
+  .container3 h3{
+    font-size: 39px;
+    font-weight: 700;
+    width: 287px;
+    margin-top: 12px;
+    margin-left: 34px;
+  }
+
+
+  .container3 p {
+    width: 301px;
+    margin-top: 0.5rem;
+    margin-left: 34px;
+  }
+
+  .AR_con1,
+  .AR_con2 {
+    display: none;
+  }
+}

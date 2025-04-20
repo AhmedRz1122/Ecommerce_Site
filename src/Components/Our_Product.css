@@ -1,0 +1,151 @@
+.Our_Product {
+    padding: 2rem 0;
+  }
+  
+  .Product_title {
+    text-align: left;
+    margin-left: 100px;
+    margin-bottom: 1rem;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: left;
+    gap: 91px;
+    margin-bottom: 20px;
+    margin-left: 83px;
+  }
+  
+  .Product_sliders {
+    display: flex;
+    position: relative;
+    right: 81px;
+}
+  
+  .Product_slider {
+    display: flex;
+    gap: 10px;
+    margin-left: 100px;
+  }
+  
+  .pagination_slider {
+    margin-top: 18rem;
+    /* margin-left: 100px; */
+    text-align: center;
+}
+  
+  .tab {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: gray;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 20px;
+  }
+  
+  .tab.active {
+    color: #1cc2b6;
+    font-weight: bold;
+  }
+  
+  .tab.active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #1cc2b6;
+    position: relative;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .tab:nth-child(3) {
+    width: 205px;
+  }
+  
+  .shapesbtn {
+    border-radius: 50%;
+    color: white;
+  }
+  
+  .arrow {
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+  }
+  
+  .star_icon {
+    fill: #FAB83B; /* Match the inline fill prop */
+    stroke: black;
+    stroke-width: 2px;
+  }
+  
+  .rs_first,
+  .rs_second,
+  .rs_third,
+  .rs_fourth {
+    display: flex;
+    gap: 5px;
+    position: relative;
+    margin-top: 5px;
+  }
+  
+  .rs_first span,
+  .rs_second span,
+  .rs_third span,
+  .rs_fourth span {
+    gap: 10px;
+    margin-right: 10px;
+  }
+  
+  .slide {
+    height: 200px;
+    width: 200px;
+    margin-right: 12px;
+  }
+  
+  .slide img {
+    height: 350px;
+    width: 280px;
+    border-radius: 18px;
+  }
+
+
+  /* Mobile Product Grid */
+@media (max-width: 767px) {
+  .Product_sliders {
+    display: flex;
+    right: 0;
+    overflow-x: auto;
+  }
+  
+  .Product_slider {
+    margin-left: 12px;
+    width: 100%;
+  }
+
+
+  
+  .slide {
+    width: 100%;
+    margin-right: 0;
+  }
+  
+  .slide img {
+    width: 201px;
+    height: 225px;
+  }
+  
+  .tabs {
+    display: flex;
+    gap: 4rem;
+    margin-left: 35px;
+  }
+
+  .pagination_slider{
+    display: none;
+  }
+}
+
+

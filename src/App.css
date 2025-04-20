@@ -1,0 +1,110 @@
+/* App.css */
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+main {
+  flex: 1;
+}
+
+/* Background line styling */
+.assets1 {
+  position: relative;
+  overflow: hidden;
+}
+
+.assets1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/asset1.png');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: contain;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.assets2 {
+  position: relative;
+  overflow: visible;
+  z-index: 1;
+}
+
+.assets2::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  width: 100%;
+  height: 80%;
+  background-image: url('./assets/asset2.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  transform: translateY(-50%);
+  z-index: -1;
+  opacity: 0.8;
+  pointer-events: none;
+  max-width: 50%;
+}
+
+.Our_vision {
+  position: relative;
+  isolation: isolate;
+}
+
+.Our_vision > * {
+  z-index: 1;
+}
+
+.assets3 {
+  position: relative;
+  margin: 0; /* Ensure no margin */
+  padding: 0; /* Remove padding to eliminate gap */
+}
+
+.assets3::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 120px;
+  right: 500px;
+  width: 100%;
+  height: 800px;
+  background-image: url('./assets/asset3.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .assets1::before,
+  .assets2::before,
+  .assets3::before {
+    display: none;
+  }
+  
+  .assets3 {
+    padding: 0; /* Ensure no padding on mobile */
+  }
+}

@@ -1,0 +1,175 @@
+.Home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 100px; 
+    gap: 50px; /* Adds space between left and right sections */
+   
+}
+
+.Home_description {
+    font-size: 15px;
+    width: 434px;
+}
+
+.Home_title {
+    width: 432px;
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.main_image {
+    height: 449px;
+    width: 426px;
+}
+
+.view_product_btn {
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    height: 40px;
+    width: 150px;
+    font-weight: bold;
+}
+
+.left_side{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 140px;
+}
+
+.right_side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   position: relative;
+   right: 35px;
+}
+
+.rightsub_right {
+    height: 127px;
+    width: 317px;
+    border: 1px solid white;
+    border-radius: 15px;
+    position: relative;
+    background-color: grey;
+
+}
+
+.product_image {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 13px;
+    left: 14px;
+}
+
+.rs_one {
+    position: absolute;
+    top: 5px;
+    left: 127px;
+    
+}
+
+.rs_one h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: black;
+}
+
+.rs_one p {
+    font-size: 22px;
+    font-weight: 400;
+    position: relative;
+    top: -19px;
+}
+
+
+.rstwo{
+    /* For rating stars */
+    position: absolute;
+    bottom: 10px;
+    left: 130px;
+    height: 20px;
+    width: 20px;
+
+    display: flex;
+}
+
+.rstwo span{
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.star_icon{
+
+fill:gold;
+stroke: black;
+stroke-width: 2px;
+
+}
+
+.rs_three{
+    /* Heart */
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: red;
+    height: 30px;
+    width: 30px;
+    
+}
+
+.rs_three .heart_icon{
+    height: 30px;
+    width: 30px;
+}
+
+.left_side_uset{
+    display: flex;
+   margin-top: 10px;
+   gap: 147px;
+   margin-left: 10px;
+}
+
+.left_side_uset span h3{
+font-weight: 700;
+font-size: 37px;
+}
+
+.left_side_uset span p{
+    font-weight: 400;
+    font-size: 15px;
+    position: relative;
+    bottom: 37px;
+}
+
+/* Mobile Home Layout */
+@media (max-width: 767px) {
+    .Home {
+      flex-direction: column;
+      padding: 1rem;
+    }
+    
+    .left_side, 
+    .right_side {
+      width: 100%;
+      position: static;
+    }
+    
+    .Home_title {
+      font-size: 2rem;
+      width: 100%;
+    }
+    
+    .Home_description {
+      width: 100%;
+    }
+    
+    .rightsub_right {
+     display: none;
+    }
+  }

@@ -1,0 +1,196 @@
+.rating {
+  padding: 4rem 0;
+  /* Add padding instead of relying on position */
+  width: 100%;
+}
+
+.title_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  /* Keep relative for layering */
+  margin-bottom: 2rem;
+}
+
+.rating_title {
+  position: absolute;
+  top: 31%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.rating_title .span1 {
+  font-size: 70px;
+  color: #197278;
+  font-weight: bolder;
+}
+
+.rating_title .span2 {
+  margin-left: 12px;
+  font-size: 23px;
+  color: white;
+  font-weight: bolder;
+}
+
+.rs_two {
+  position: absolute;
+  top: 73%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.rs_two span {
+  margin-left: 10px;
+}
+
+.title_main img {
+  height: 193px;
+  width: 409px;
+  position: relative;
+  z-index: 0;
+}
+
+.rating_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto 25px;
+}
+
+.rating_container .rating_container_left {
+  margin-left: 103px;
+}
+
+.rating_left_one,
+.rating_left_two,
+.rating_right_one,
+.rating_right_two {
+  height: 207px;
+  width: 421px;
+  border: 2px solid #197278;
+  border-radius: 15px;
+  margin-bottom: 35px;
+  padding: 1rem;
+}
+
+.header_ratingbox,
+.heading_rs2,
+.heading_ro,
+.heading_rt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.header_ratingbox .Molly_Kemp,
+.heading_rs2 .Bear_Smith,
+.heading_ro .Jenna_Sels,
+.heading_rt .Sara_Malls {
+  text-align: right;
+}
+
+.Molly_Kemp .author_name,
+.Bear_Smith .author_name,
+.Jenna_Sels .author_name,
+.Sara_Malls .author_name {
+  color: #197278;
+  font-weight: bolder;
+}
+
+.cont1,
+.cont2,
+.cont3,
+.cont4 {
+  margin-top: 1rem;
+}
+
+.star_rating span {
+  margin-left: 5px;
+}
+
+
+
+@media (max-width: 768px) {
+  .rating_container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  .rating_container .rating_container_left,
+  .rating_container .rating_container_right {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .rating_left_one,
+  .rating_left_two,
+  .rating_right_one,
+  .rating_right_two {
+    width: 100%;
+    max-width: 85%;
+    margin-bottom: 1.5rem;
+    height: auto;
+    min-height: 180px;
+  }
+
+  .title_main img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .rating_title {
+    top: 25%;
+  }
+
+  .rs_two {
+    top: 65%;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 470px) {
+  .rating_title .span1 {
+    font-size: 50px;
+  }
+
+  .rating_title .span2 {
+    font-size: 18px;
+  }
+
+  .rating_left_one,
+  .rating_left_two,
+  .rating_right_one,
+  .rating_right_two {
+    width: 100%;
+    max-width: 85%;
+    margin-bottom: 1.5rem;
+    height: auto;
+    min-height: 180px;
+  }
+
+  .header_ratingbox,
+  .heading_rs2,
+  .heading_ro,
+  .heading_rt {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .Molly_Kemp,
+  .Bear_Smith,
+  .Jenna_Sels,
+  .Sara_Malls {
+    text-align: left !important;
+    width: 100%;
+  }
+}
